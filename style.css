@@ -1,0 +1,293 @@
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+.section1, .section2, .section3{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* NAVBAR */
+nav{
+    height: 70px;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    color: aliceblue;
+}
+
+.navbar a:hover{
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #008b8b;
+}
+
+/* MENU */
+
+.fa-bars{
+    visibility: hidden;
+}
+
+/* SECTION SATU */
+
+.section1{
+    height: 350px;
+}
+
+
+.hi{
+    float: left;
+    width: 40%;
+    display: flex;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.profile{
+    float: right;
+    width: 40%;
+}
+
+.profile img, .profile div{
+    width: 200px;
+    height: 200px;    
+}
+
+.img1{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index:-1;
+}
+
+
+.kotak{
+    background-color: #008b8b;
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -2;
+  
+   
+}
+
+/* SECTION 2 */
+
+.section2{
+    height: 500px;
+    margin-top: 100px;
+    
+}
+
+.section2 h3{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.skill-text{
+    float: left;
+    width: 40%;
+    display: flex;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+
+
+.skill-list{
+    float: right;
+    display: block;
+    width: 40%;
+    
+}
+
+.skill{
+    height: 50px;
+    width: 300px;
+    background-color: #008b8b;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    text-align: center;
+ 
+}
+
+/* SECTION 3 */
+
+.section3 h3{
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact{
+    display: block;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.contact span{
+    color: black;
+}
+
+
+.section3 i{
+    color: #008b8b;
+    font-size: 50px;
+    display: flex;
+    margin-left: 20px;
+
+}
+
+
+.text-contact{
+    font-size: medium;
+    color: #008b8b;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* FOOTER */
+.footer{
+    background-color: #008b8b;
+    color: aliceblue;
+    text-align: center;
+    height: 35px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    margin-top: 50px;
+    font-size: smaller;
+}
+
+/* RESPONSIVE NAVBAR */
+@media only screen and (max-width: 768px){
+ 
+    .fa-bars{
+        visibility: visible;
+        float: right;
+        font-size: 30px;
+        margin-right: 20px;
+        color: aliceblue;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #008b8b;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        transform: translateX(100%);
+        transition: 1s all;
+        margin-top: 70px;
+    }
+
+
+    .nav li{
+        visibility: visible;
+        color: aliceblue;
+      
+    }
+
+    .fa-bars{
+        margin-left:425px;
+    }
+
+    nav ul.slide{
+        transform: translateX(0%);
+    }
+
+
+}
+
+
+/* RESPONSIVE MOBILE */
+@media only screen and (max-width: 576px){
+
+    nav{
+        height: 70px;
+    }
+
+
+    .skill-text, .skill-list{
+        width: 100%;
+        margin: 0px;
+        padding: 0;     
+    }
+
+    .skill{
+        margin-left: 30px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: #008b8b;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        transform: translateX(100%);
+        transition: 1s all;
+        margin-top: 70px;
+
+    }
+
+
+    .nav li{
+        visibility: visible;
+        color: aliceblue;
+    }
+
+    .fa-bars{
+        
+    }
+
+    nav ul.slide{
+        transform: translateX(0%);
+    }
+  
+    
+}
+
+/* RESPONSIVE MOBILE */
+
+
+
+
+
